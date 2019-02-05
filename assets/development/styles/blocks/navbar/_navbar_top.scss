@@ -37,8 +37,8 @@
   text-align: center;
   padding: 15px 0;
   text-transform: uppercase;
-  font-family: "Futura", sans-serif;
-  font-weight: 500;
+  font-family: $font-family-primary;
+  font-weight: 400;
   .navbar__link_active {
     background-color: $color-light-blue;
   }
@@ -80,7 +80,7 @@
     width: 10px;
     height: 10px;
     margin-right: 15px;
-    background-image: url('../images/new_cont/right_angle_full.png');
+    background-image: url('../images/right_angle_full.webp');
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -109,7 +109,7 @@
       &:after {
         content: '';
         display: block;
-        background-image: url('../images/new_cont/download.png');
+        background-image: url('../images/download.webp');
         background-size: contain;
         height: 23px;
         width: 18px;
@@ -127,7 +127,7 @@
   }
   .navbar__sublink_top {
     border-bottom: 1px solid #2a2a2a;
-    font-family: "Futura", sans-serif;
+    font-family: $font-family-primary;
     text-transform: uppercase;
     font-weight: 500;
     &:before {

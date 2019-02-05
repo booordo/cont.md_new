@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify');
 const cleancss = require('gulp-clean-css');
 const browserSync = require('browser-sync');
 const del = require('del');
+const webp = require('gulp-webp');
 
 const server = browserSync.create();
 const clean = () => del(['assets/production']);
@@ -17,7 +18,8 @@ const dirs = {
 
 const sources = {
 	styles: `${dirs.src}/styles/**/*.scss`,
-	scripts: `${dirs.src}/scripts/*.js`
+	scripts: `${dirs.src}/scripts/*.js`,
+	images: `${dirs.src}/images/*.{png,jpg}`
 };
 
 function styles() {
@@ -35,6 +37,12 @@ function scripts() {
 		.pipe(uglify())
 		.pipe(concat('main.min.js'))
 		.pipe(gulp.dest(`${dirs.dest}/scripts/`));
+}
+
+function images() {
+	return gulp.src(sources.images)
+		.pipe(webp())
+		.pipe(gulp.dest(`${dirs.dest}/images/`));
 }
 
 function reload(done) {
@@ -56,6 +64,6 @@ const watch = () => {
 	gulp.watch(sources.scripts, gulp.series(scripts, reload));
 };
 
-const dev = gulp.series(clean, gulp.parallel(styles, scripts), serve, watch);
+const dev = gulp.series(clean, gulp.parallel(styles, scripts, images), serve, watch);
 
 exports.default = dev;
