@@ -1,0 +1,116 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  font-size: $font-size-button;
+  padding: 10px 20px;
+}
+
+.button_block {
+  display: block;
+}
+
+.button_size_s {
+  padding: 7px 30px;
+}
+
+.button_size_l {
+  padding: 15px 25px;
+}
+
+.button_theme_simple, .button_theme_simple-reverse {
+  border: 2px solid $color-white;
+  font-family: $font-family-primary;
+  font-weight: 300;
+}
+
+.button_theme_3d, .button_theme_3d-reverse {
+  font-family: $font-family-primary;
+  font-weight: 300;
+}
+
+.button_theme_flat, .button_theme_flat-reverse {
+  font-family: $font-family-second;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.button_theme_simple {
+  background-color: $color-light-blue;
+  color: $font-color-white;
+  &:hover, &:active {
+    background-color: $color-blue;
+    color: $font-color-white;
+  }
+}
+
+.button_theme_simple-reverse {
+  background-color: $color-yellow;
+  color: $font-color-black;
+  &:hover, &:active {
+    background-color: $color-dark-yellow;
+    color: $font-color-black;
+  }
+}
+
+.button_theme_flat {
+  background-color: $color-light-blue;
+  color: $font-color-white;
+  &:hover {
+    background-color: $color-yellow;
+    color: $font-color-black;
+  }
+  &:active {
+    background-color: $color-dark-yellow;
+    color: $font-color-black;
+  }
+}
+
+.button_theme_flat-reverse {
+  background-color: $color-yellow;
+  color: $font-color-black;
+  &:hover {
+    background-color: $color-light-blue;
+    color: $font-color-white;
+  }
+  &:active {
+    background-color: $color-blue;
+    color: $font-color-white;
+  }
+}
+
+.button_theme_3d {
+  border-bottom: 4px solid $color-blue;
+  background-color: $color-light-blue;
+  color: $font-color-white;
+  &:hover {
+    border-bottom: 4px solid $color-dark-yellow;
+    background-color: $color-yellow;
+    color: $font-color-black;
+  }
+  &:active {
+    margin-top: 4px;
+    border-bottom: 0px;
+    background-color: $color-dark-yellow;
+    color: $font-color-black;
+  }
+}
+
+.button_theme_3d-reverse {
+  border-bottom: 4px solid $color-dark-yellow;
+  background-color: $color-yellow;
+  color: $font-color-black;
+  &:hover {
+    border-bottom: 4px solid $color-blue;
+    background-color: $color-light-blue;
+    color: $font-color-white;
+  }
+  &:active {
+    margin-top: 4px;
+    border-bottom: 0px;
+    background-color: $color-blue;
+    color: $font-color-white;
+  }
+}

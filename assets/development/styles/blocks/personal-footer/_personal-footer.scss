@@ -1,0 +1,15 @@
+.personal-footer {
+    box-shadow: 0 0 15px 0 #dddddd;
+    border-top: 1px solid #dddddd;
+    min-height: 86px;
+}
+
+.personal-footer__inner {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}

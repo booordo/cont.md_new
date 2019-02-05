@@ -1,0 +1,44 @@
+.definition {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.definition__left {
+	width: 27%;
+}
+
+.definition__right {
+	
+}
+
+.definition__title {
+	font-size: 1.066666666666667rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.definition__text {
+	font-size: 1.066666666666667rem;
+	font-weight: 300;
+	color: #000;
+	margin-bottom: 7px;
+}
+
+.definition__link {
+	color: #4ea5e0;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}	
+}
+
+@media only screen and (max-width: 900px) {
+	.definition {
+		flex-direction: column;
+	}
+	.definition__left {
+		width: 100%;
+		margin-bottom: 10px;
+	}	
+}

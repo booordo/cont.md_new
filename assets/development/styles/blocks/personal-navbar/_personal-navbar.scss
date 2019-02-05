@@ -1,0 +1,33 @@
+.personal-navbar {
+    display: flex;
+}
+
+.personal-navbar__link {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333333;
+    display: block;
+    user-select: none;
+}
+
+.personal-navbar__link:hover {
+    color: #2865A9;
+}
+
+.personal-navbar__link_active {
+    color: #2865A9;
+}
+
+.personal-navbar__link_accent {
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #2865A9;
+    margin-right: 15px;
+    color: #2865A9;
+}
+
+.personal-navbar__link_accent:hover {
+    border: 2px solid rgb(51, 135, 231);
+    color: rgb(51, 135, 231);
+}

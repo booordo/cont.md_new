@@ -1,0 +1,16 @@
+.companies {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 25px;
+}
+
+.companies__item {
+	padding: 15px;
+}
+
+.companies__image {
+	max-width: 200px;
+	height: auto;
+}

@@ -1,0 +1,110 @@
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $color-white;
+  padding-left: calc(100vw - 100%);
+}
+
+.section_size_xs {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.section_size_s {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section_size_l {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.section_size_xl {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section_no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section_theme_clouds {
+  background-color: $color-gray;
+  background-image: url('../images/new_cont/bg_clouds.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section_theme_sky {
+  background-color: $color-light-blue;
+  background-image: url('../images/new_cont/bg_sky_dotted.png');
+  background-size: cover;
+}
+
+.section_theme_clear {
+  background-color: $color-white;
+}
+
+.section_theme_light {
+  background-color: $color-light-gray;
+}
+
+.section_theme_about {
+  background-color: $color-dark-white;
+}
+
+.section_theme_dark {
+  background-color: $color-black;
+}
+
+.section_theme_blue {
+  background-color: #3e9ddc;
+}
+
+.section_theme_touch {
+  background-image: url('../images/new_cont/bg_man.png');
+  background-color: $color-gray;
+  background-position: 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.section_theme_solutions {
+  background-image: url('../images/new_cont/bg_solutions.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section_theme_erp {
+  background-image: url('../images/new_cont/bg_erp.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section_theme_map {
+  background-image: url('../images/new_cont/bg_contacts.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 100% 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section_no-padding {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .section_size_xs {
+    padding-top: 55px;
+    padding-bottom: 15px;
+  }
+  .section_size_s {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

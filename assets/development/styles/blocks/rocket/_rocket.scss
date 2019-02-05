@@ -1,0 +1,28 @@
+.rocket {
+	height: 485px;
+	background-image: url('../images/new_cont/bg_process.png');
+	background-size: 95%;
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.rocket__button {
+	position: absolute;
+	&:nth-of-type(1) {
+		bottom: 8%;
+		left: 0;
+	}
+	&:nth-of-type(2) {
+		bottom: 16%;
+		left: 25%;
+	}
+	&:nth-of-type(3) {
+		bottom: 24%;
+		left: 50%;
+	}
+	&:nth-of-type(4) {
+		bottom: 32%;
+		left: 75%;
+	}
+}

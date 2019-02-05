@@ -1,0 +1,54 @@
+
+.puzzle {
+    display: block;
+    height: 800px;
+    width: calc(100% + 30px);
+    margin: 0 auto;
+    margin-left: -15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.puzzle__sector {
+    transition: fill 0.2s;
+}
+
+.puzzle__text {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-anchor: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    pointer-events: none;
+    transition: fill 0.2s;
+}
+
+.puzzle__circle-title {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 119px;
+    font-weight: 600;
+    text-transform: uppercase;
+    pointer-events: none;
+    text-anchor: middle;
+}
+
+.puzzle__circle-choice {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 20.5px;
+    font-weight: 500;
+    line-height: 1em;
+    text-transform: uppercase;
+    pointer-events: none;
+    text-anchor: middle;
+}
+
+.puzzle__circle-subtitle {
+    font-family: "FuturaFuturis", Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    pointer-events: none;
+    text-anchor: middle;
+}

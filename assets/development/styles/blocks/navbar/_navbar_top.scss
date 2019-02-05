@@ -1,0 +1,137 @@
+.navbar_top {
+  list-style: none;
+  @include flex(row, space-between);
+  background-color: $color-blue;
+}
+
+.navbar__item_top {
+  position: relative;
+  flex: 1;
+  @media only screen and (min-width: 901px) {
+    &:hover {
+      background-color: $color-light-blue;
+      .navbar__sublist_top {
+        display: block;
+      }
+    }
+  }
+}
+
+.navbar__item_top_actived {
+  background-color: $color-light-blue;
+}
+
+.navbar__item_top_download {
+  display: none;
+}
+
+.navbar__item_top_multilevel {
+  .navbar__link_top {
+    pointer-events: none;
+  }
+}
+
+.navbar__link_top {
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  .navbar__link_active {
+    background-color: $color-light-blue;
+  }
+}
+
+.navbar__sublist_top {
+  display: none;
+  background-color: #2a88c8;
+  position: absolute;
+  z-index: 999;
+  top: 100%;
+  margin: 0;
+  padding: 15px 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.navbar__sublist_top_actived {
+  display: block;
+}
+
+.navbar__subitem_top {
+  &:hover {
+    background-color: #3498db;
+  }
+}
+
+.navbar__subitem_top_actived {
+  background-color: #3498db; 
+}
+
+.navbar__sublink_top {
+  display: block;
+  padding: 10px 25px;
+  color: #fff;
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    background-image: url('../images/new_cont/right_angle_full.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar_top {
+    display: block;
+    background-color: #343434;
+    margin-left: -15px;
+    margin-right: -15px;
+    max-height: calc(100vh - 100px);
+    overflow-y: scroll;
+  }
+  .navbar__item_top {
+    border-bottom: 1px solid #2a2a2a;
+  }
+  .navbar__item_top_download {
+    background-color: #f1c40f;
+    display: block;
+    .navbar__link_top {
+      color: #313131;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:after {
+        content: '';
+        display: block;
+        background-image: url('../images/new_cont/download.png');
+        background-size: contain;
+        height: 23px;
+        width: 18px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .navbar__sublist_top {
+    padding: 0;
+    position: static;
+    background-color: #444446;
+    border-top: 1px solid #2a2a2a;
+    white-space: normal;
+    text-align: center;
+  }
+  .navbar__sublink_top {
+    border-bottom: 1px solid #2a2a2a;
+    font-family: "Futura", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:before {
+      display: none;
+    }
+  }
+}

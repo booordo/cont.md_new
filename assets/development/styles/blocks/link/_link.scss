@@ -1,0 +1,26 @@
+.link {
+	font-family: $font-family-primary;
+	font-weight: 300;
+	font-size: 1.066666666666667rem;
+	color: #4ea5e0;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.link_disable {
+	pointer-events: none;
+   	cursor: default;
+   	color: #777;
+   	user-select: none;
+}
+
+.link_size_s {
+
+}
+
+.link_size_l {
+
+}

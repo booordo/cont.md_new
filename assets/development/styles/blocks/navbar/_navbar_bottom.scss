@@ -1,0 +1,20 @@
+.navbar_bottom {
+  list-style-image: url('../images/new_cont/right_angle.png');
+  padding-left: 15px;
+}
+
+.navbar__item_bottom {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.navbar__link_bottom {
+  font-family: $font-family-primary;
+  font-size: 1rem;
+  font-weight: 300;
+  color: $link-color-light;
+  &:hover {
+  	color: $font-color-light-blue;
+  }
+}

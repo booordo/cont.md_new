@@ -1,0 +1,25 @@
+.contact {
+  @include flex();
+}
+
+.contact__image-box, .contact__title-box {
+  @include flex(column, center, flex-start);
+}
+
+.contact__title-box {
+  padding-left: 10px;
+}
+
+.contact__image {
+
+}
+
+.contact__title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: $font-color-yellow;
+}
+
+.contact__subtitle {
+  font-weight: 300;
+}

@@ -1,0 +1,30 @@
+.content {
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+.content_padding {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.content_center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content_dark {
+	background-color: #EDEEF0;
+}
+
+@media only screen and (max-width: 900px) {
+	.content {
+		margin-top: 70px;
+	}
+	.content_center {
+		margin-top: 0;
+		align-items: flex-start;
+		justify-content: center;
+	}
+}

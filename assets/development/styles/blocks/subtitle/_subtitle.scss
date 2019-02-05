@@ -1,0 +1,36 @@
+.subtitle {
+	display: block;
+	font-family: $font-family-primary;
+	font-size: 1.533333333333333rem;
+	font-style: italic;
+	font-weight: 300;
+	padding-bottom: 15px;
+}
+
+.subtitle_align_left {
+	text-align: left;
+}
+
+.subtitle_align_center {
+	text-align: center;
+}
+
+.subtitle_align_right {
+	text-align: right;
+}
+
+.subtitle_color_white {
+	color: #fff;
+}
+
+.subtitle_color_black {
+	color: #313132;
+}
+
+@media only screen and (max-width: 900px) {
+	.subtitle {
+		font-size: 1.2rem;
+		padding-top: 15px;
+		padding-bottom: 0;
+	}
+}

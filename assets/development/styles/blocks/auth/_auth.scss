@@ -1,0 +1,42 @@
+.auth {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 15px 0;
+}
+
+.auth__link {
+    display: block;
+    padding: 10px 20px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.auth__link_logout {
+    color: $font-color-yellow;
+    border: 1px solid $font-color-yellow;
+    border-radius: 5px;
+    &:hover {
+        color: $color-yellow;
+        border: 1px solid $color-yellow; 
+    }
+}
+
+.auth__link_auth {
+    border: 1px solid $color-blue;
+    border-radius: 5px;
+    color: $color-blue;
+    &:hover {
+        color: $color-light-blue;
+        border: 1px solid $color-light-blue;
+    }
+}
+
+.auth__link_reg {
+    color: #fff;
+    border-radius: 5px;
+    background-color: $color-blue;
+    &:hover {
+        background-color: $color-light-blue;
+    } 
+}

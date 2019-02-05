@@ -1,0 +1,13 @@
+.breadcrumbs_theme_dark {
+	.breadcrumbs__link {
+		color: #fff;
+	}
+	.link_disable {
+		color: #ccc;
+	}
+	.breadcrumbs__separator {
+		&:before {
+	    	color: #fff;
+		}
+	}
+}

@@ -1,0 +1,223 @@
+.modal {
+    display: none;
+}
+
+.modal_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_info {
+    .modal__header {
+        background-color: $color-blue;
+        color: $font-color-white;
+    }
+    .modal__close {
+        color: darken($color-blue, 10%);   
+    }
+}
+
+.modal_alert {
+    .modal__header {
+        background-color: $color-yellow;
+        color: $font-color-black;
+    }
+    .modal__close {
+        color: darken($color-yellow, 10%);
+        &:hover {
+            color: $font-color-black; 
+        }
+    }
+    .modal__text_alert {
+        padding: 15px;
+        background-color: rgba($color-yellow, 0.1);
+        border-left: 5px solid $color-yellow;
+    }
+    .modal__button {
+        background-color: $color-yellow;
+        color: $font-color-black;
+        &:hover {
+            background-color: lighten($color-yellow, 10);
+        }   
+    }
+    .modal__button_cancel {
+        background-color: transparent;
+        color: $font-color-black;
+        &:hover {
+            background-color: #dddddd;
+        }   
+    }
+    .modal__link {
+        color: $color-yellow;
+        &:hover {
+            color: lighten($color-yellow, 10);
+        }   
+    }
+}
+
+.modal_danger {
+    .modal__header {
+        background-color: $color-red;
+        color: $font-color-white;
+    }
+    .modal__text_alert {
+        padding: 15px;
+        background-color: rgba($color-red, 0.1);
+        border-left: 5px solid $color-red;
+    }
+    .modal__button {
+        background-color: $color-red;
+        &:hover {
+            background-color: $color-light-red;
+        }   
+    }
+}
+
+.modal_success {
+    .modal__header {
+        background-color: $color-green;
+        color: $font-color-white;
+    }
+    .modal__text_alert {
+        padding: 15px;
+        background-color: rgba($color-green, 0.1);
+        border-left: 5px solid $color-green;
+    }
+    .modal__button {
+        background-color: $color-green;
+        &:hover {
+            background-color: $color-light-green;
+        }   
+    }
+}
+
+.modal__inner {
+    display: flex;
+    flex-flow: column;
+    width: 550px;
+    max-height: 85vh;
+    max-width: 90%;
+    overflow-y: auto; 
+    border-radius: 10px;
+    cursor: auto;
+}
+
+.modal__header {
+    padding: 25px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: $font-color-black;
+    position: relative;
+}
+
+.modal__body {
+    padding: 25px;
+    flex-shrink: 100;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+.modal__footer {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+
+.modal__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .modal__title {
+        font-size: 20px;   
+    } 
+}
+
+.modal__close {
+    font-size: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: darken(#ffffff, 10%);
+    transition: color .2s;
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.modal__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 30px 0 15px 0;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.modal__text {
+    font-family: $font-family-primary;
+    color: $font-color-black;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+    &:nth-last-child(1) {
+        margin: 0;
+    }
+}
+
+.modal__text_alert {
+    padding: 15px;
+    background-color: rgba($color-blue, 0.1);
+    border-left: 5px solid $color-blue;
+}
+
+.modal__link {
+    color: $color-blue;
+    text-decoration: none;
+	&:hover {
+		color: $color-light-blue;
+	}
+}
+
+.modal__button {
+    display: block;
+    text-decoration: none;
+    border: none;
+    width: 50%;
+    padding: 10px 15px;
+    background-color: $color-blue;
+    text-align: center;
+    color: #ffffff;
+    font-family: $font-family-primary;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+        background-color: $color-light-blue;
+    }
+}
+
+.modal__button_cancel {
+    background-color: transparent;
+    color: #444444;
+    &:hover {
+        background-color: #dddddd;
+    }
+}

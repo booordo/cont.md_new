@@ -1,0 +1,37 @@
+.navbar-toggler {
+	width: 25px;
+	cursor: pointer;
+	position: relative;
+	user-select: none;
+	overflow: hidden;
+}
+
+.navbar-toggler_actived {
+	.navbar-toggler__line {
+		&:nth-of-type(1) {
+			transform: translateY(-3px) translateX(2px) rotate(45deg);
+			width: 35.35533905932738px;
+		}
+		&:nth-of-type(2) {
+			width: 0;
+			opacity: 0;
+		}
+		&:nth-of-type(3) {
+			transform: translateY(3px) translateX(2px) rotate(-45deg);
+			width: 35.35533905932738px;
+		}
+	}
+}
+
+.navbar-toggler__line {
+	width: 100%;
+	height: 3px;
+	background-color: #000;
+	margin-bottom: 5px;
+	transition: all 0.2s;
+	transform-origin: left center;
+	position: relative;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}

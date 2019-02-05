@@ -1,0 +1,29 @@
+.social {
+  @include flex(row, flex-end, center);
+}
+
+.social__text {
+  font-weight: 300;
+}
+
+.social__link {
+  display: block;
+  height: 33px;
+  width: 33px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.social__link_facebook {
+  background-image: url('../images/new_cont/soc_facebook.png');
+  &:hover {
+    background-image: url('../images/new_cont/soc_facebook_hover.png');
+  }
+}
+
+.social__link_youtube {
+  background-image: url('../images/new_cont/soc_youtube.png');
+  &:hover {
+    background-image: url('../images/new_cont/soc_youtube_hover.png');
+  }
+}

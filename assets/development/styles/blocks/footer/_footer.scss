@@ -1,0 +1,15 @@
+.footer {
+	background-color: $color-gray;
+}
+
+.footer__panel {
+	@include flex(row, space-between, center);
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.footer__navbar {
+	background-color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
